@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasto semanal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-primary bg-primary">
+        <h1>App Gasto semanal</h1>
+    </nav>
+
+    <div class="container">
+
+        <div class="row mt-3" id="app">
+            <form class="col-md-4 text-center" id="form-gasto">
+                <h3 class="my-3">Agrega tu gasto</h3>
+                <div class="form-group">
+                    <label for="gasto">Nombre del gasto:</label>
+                    <input type="text" placeholder="Gasto" id="nombre-gasto" class="form-control" name="gasto">
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad del gasto:</label>
+                    <input type="number" placeholder="Cantidad" id="cantidad-gasto" class="form-control" name="cantidad" min="0">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary align-self-center" value="Agregar">
+                </div>
+                <div id="presupuesto">
+
+                </div>
+                <div id="restante">
+
+                </div>
+            </form>
+
+            <div class="col-md-8 text-center" id="lista-gastos">
+                <h3 class="my-3">Lista de gastos</h3>
+                <div id="gastos">
+                    
+                </div>
+                <div id="presupuesto">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
